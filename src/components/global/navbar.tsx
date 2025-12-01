@@ -9,7 +9,9 @@ const Navbar = async (props: Props) => {
     return (
       <header className="fixed right-0 left-0 top-0 py-4 bg-black/40 border-b border-neutral-900 backdrop-blur-lg justify-between z-100 flex items-center px-4">
         <aside>
-          <p className="text-3xl font-bold">NexFlow</p>
+          <span className="text-3xl font-bold font-sans text-neutral-500 ">
+            NexFlow
+          </span>
         </aside>
 
         <nav className="absolute left-[50%] top-[50%] transform translate-x-[-50%] translate-y-[-50%] hidden md:block">
@@ -32,15 +34,18 @@ const Navbar = async (props: Props) => {
           </ul>
         </nav>
 
-        <aside className='flex items-center gap-4'>
-          <Link href="/dashboard" className="relative inline-flex h-10 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2 focus:ring-offset-slate-50">
+        <aside className="flex items-center gap-4">
+          <Link
+            href="/dashboard"
+            className="relative inline-flex h-10 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2 focus:ring-offset-slate-50"
+          >
             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
             <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-                {/* WIP: wire up user */}
+              {/* WIP: wire up user */}
               {user ? "Dashboard" : "Get Started"}
             </span>
           </Link>
-          <MenuIcon className='md:hidden'></MenuIcon>
+          <MenuIcon className="md:hidden"></MenuIcon>
         </aside>
       </header>
     );
