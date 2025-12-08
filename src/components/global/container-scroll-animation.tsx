@@ -86,16 +86,15 @@ export const Card = ({
         boxShadow:
           "0 0 #0000004d, 0 9px 20px #0000004a, 0 37px 37px #00000042, 0 84px 50px #00000026, 0 149px 60px #0000000a, 0 233px 65px #00000003",
       }}
-      className="max-w-5xl -mt-12 mx-auto h-[30rem] md:h-[40rem] w-full border-4 border-[#6C6C6C] p-2 md:p-6 bg-[#222222] rounded-[30px] shadow-2xl"
+      className="max-w-5xl -mt-8 mx-auto h-[30rem] md:h-[40rem] w-full border-8 border-[#6C6C6C]  rounded-4xl shadow-2xl"
     >
-      <div className=" bg-gray-500 h-full w-full rounded-2xl  gap-4 overflow-hidden p-4 transition-all ">
+      <div className=" w-full h-full rounded-4xl transition-all sticky">
         <Image
           src="/temp-banner.png"
-                  width={1000}
-                  height={1400}
+                  fill
                   
           alt="bannerImage"
-          className="object-cover border-8 rounded-2xl"
+          className="object-cover border-8 rounded-4xl "
         />
       </div>
     </motion.div>
