@@ -1,6 +1,7 @@
 import { ContainerScroll } from "@/components/global/container-scroll-animation";
 import { HeroParallax } from "@/components/global/hero-parallax";
 import { InfiniteMovingCards } from "@/components/global/infinite-moving-cards";
+import { LampComponent } from "@/components/global/lamp";
 import Navbar from "@/components/global/navbar";
 import { Button } from "@/components/ui/button";
 import { clients, products } from "@/lib/constant";
@@ -41,6 +42,9 @@ export default function Home() {
       ></InfiniteMovingCards>
       <section>
         <HeroParallax products={products}></HeroParallax>
+      </section>
+      <section className="m-[-500px]">
+       <LampComponent></LampComponent>
       </section>
     </main>
   );
